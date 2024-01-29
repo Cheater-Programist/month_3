@@ -35,4 +35,15 @@ async def test(message:types.Message):
 async def not_found(message:types.Message):
     await message.reply("I didn't care, chose /help")
 
+
+"""
+@dp.message_handler()
+async def get_number(message:types.Message):
+    try:
+        if isinstance(int(message.text), int):
+            await message.answer("Это число")
+    except:
+        await message.answer("Это не число")
+"""
+
 executor.start_polling(dp)
