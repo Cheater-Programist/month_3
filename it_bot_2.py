@@ -16,7 +16,7 @@ start_buttons = [
 start_keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True).add(*start_buttons)  #if you wanna some, chose by index => .add(start_buttons[0]).add(start_buttons[1])
 
 @dp.message_handler(commands='start')
-async def start(message:types.Message):
+async def start(message:types.Messagenm):
     await message.answer(f"Hello {message.from_user.full_name}", reply_markup=start_keyboard)
 
 @dp.message_handler(text="About us")
