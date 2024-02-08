@@ -1,7 +1,8 @@
 from aiogram import Bot, Dispatcher, types, executor
 import random
+from config import hw_1
 
-bot = Bot(token='6789612758:AAGugs4UyhKEaBwLt32gTenbPB_5lbo6Iv8')
+bot = Bot(token=hw_1)
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands='start')
