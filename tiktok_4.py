@@ -9,7 +9,7 @@ dp = Dispatcher(bot)
 logging.basicConfig(level=logging.INFO)
 @dp.message_handler(commands='start')
 async def start(message:types.Message):
-    await message.reply(f"Hello {message.from_user.full_name}, send a tiktok link")
+    await message.reply(f"Hello {message.from_user.full_name}, send a tiktok link...")
 
 @dp.message_handler()
 async def get_url_tiktok(message:types.Message):
